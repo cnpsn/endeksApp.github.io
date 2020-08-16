@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
+@keyframes gonder { 
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+    }
+    
+    #gonderGitsin{
+        animation-name: gonder; 
+        animation-duration: 1s;
+        animation-timing-function:ease;
+    }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    #gonderGelsin {
+      animation-name: gonder; 
+      animation-duration: 1s;
+      animation-timing-function:ease;
+    }
+    .text{
+      font-size: 40px;
+    }
+    .icon{
+      font-size: 250px;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    .aciklama{
+      font-size: 30px;
+      font-weight: 700px;
+    }
+    .divBalon{
+      height: 300px;
+      width: 300px;
+      border-radius: 150px;
+    }
+    .Bmi{
+      text-align: center;
+      font-size: 17px;
+      font-weight: 700px;
+    }
+    .Kg{
+      text-align: center;
+      font-size: 35;
+      font-weight: 800px;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    @media only screen and (max-width: 800px) {
+      .text{
+        font-size: 30px;
+      }
+      .icon{
+        font-size:200px;
+      }
+      .pB{
+        margin-bottom: 50px;
+      }
+    }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    @media only screen and (max-width: 490px) {
+      .Kg{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 800px;
+      }
+      .Bmi{
+        text-align: center;
+        font-size: 17px;
+        font-weight: 700px;
+      }
+      .aciklama{
+        font-size: 20px;
+        font-weight: 500px;
+      }
+      .text{
+        font-size: 19px;
+      }
+      .icon{
+        font-size:200px;
+      }
+      .pB{
+        margin-bottom: 50px;
+      }
+      .divBalon{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+      }
+    }
